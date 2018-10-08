@@ -40,7 +40,7 @@ cd ~/Akisui/out/artifacts/Akisui_jar
 
 java -jar akisui.jar
 
-※ (指定先) /read/zinbeiw (zinbei2/bin/zinbeiwから)
+※ [指定先] /read/zinbeiw (zinbei2/bin/zinbeiwから)
 
 > 探したい文字列
 

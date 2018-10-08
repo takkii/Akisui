@@ -33,16 +33,18 @@
 使い方
 
 ```text
+[実行手順]
 
 git clone https://github.com/takkii/Akisui.git
-
 cd ~/Akisui/out/artifacts/Akisui_jar
-
 java -jar Akisui.jar
 
-※ [指定先] /read/zinbeiw (zinbei2/bin/zinbeiwから)
+[読み込みファイル指定]
 
-> 探したい文字列
+/read/zinbeiw 
+(zinbei2/bin/zinbeiw → Akisui/readへ移動、読み込み指定)
+
+> 探したい文字列 or 正規表現
 
 ```
 

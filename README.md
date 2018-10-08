@@ -29,3 +29,5 @@
 ・コンパイラのメッセージを無効化しました。
 ・出力時、行番号を表示するようにしました。
 ```
+
+![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/images/Duke_Blueprint.gif)

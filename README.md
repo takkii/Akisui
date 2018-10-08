@@ -38,7 +38,7 @@ git clone https://github.com/takkii/Akisui.git
 
 cd ~/Akisui/out/artifacts/Akisui_jar
 
-java -jar akisui.jar
+java -jar Akisui.jar
 
 ※ [指定先] /read/zinbeiw (zinbei2/bin/zinbeiwから)
 

@@ -30,20 +30,4 @@
 ・出力時、行番号を表示するようにしました。
 ```
 
-使い方
-
-```text
-
-git clone https://github.com/takkii/Akisui.git
-
-cd ~/Akisui/out/artifacts/Akisui_jar
-
-java -jar akisui.jar
-
-※ (指定先) /read/zinbeiw (zinbei2/bin/zinbeiwから)
-
-> 探したい文字列
-
-```
-
 ![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/image/Duke_Blueprint.gif)

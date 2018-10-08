@@ -30,4 +30,4 @@
 ・出力時、行番号を表示するようにしました。
 ```
 
-![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/images/Duke_Blueprint.gif)
+![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/image/Duke_Blueprint.gif)

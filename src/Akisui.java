@@ -2,15 +2,17 @@ package src;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.concurrent.locks.*;
+import java.util.stream.Stream;
 
 class MyHandler implements Thread.UncaughtExceptionHandler{
 
     @Override
-    public void uncaughtException(Thread t, Throwable ex){
+    public void uncaughtException(Thread t, Throwable ex) {
         System.out.println("例外発生 : " + t.getId());
         ex.printStackTrace();
     }
@@ -31,69 +33,92 @@ public class Akisui extends Thread {
         writelock = locks.writeLock();
 
         // 非同期処理を使う
-            Thread thread = new Thread();
-            thread.setUncaughtExceptionHandler(new MyHandler());
-            thread.setDaemon(true);
-            thread.start();
+        Thread thread = new Thread();
+        thread.setUncaughtExceptionHandler(new MyHandler());
+        thread.setDaemon(true);
+        thread.start();
+
+        // ファイルが読み込み可能か調べる
+        File file = new File(System.getProperty("user.dir") + "/read/zinbeiw");
+        boolean canRead = file.canRead();
+        System.out.println("---------------------------------------------------");
+        System.out.println();
+        System.out.println("読み込み可・不可を判定 : " + canRead);
+        System.out.println("");
+        System.out.println("---------------------------------------------------");
+        System.out.println();
+
+        Path parent = Paths.get(System.getProperty("user.dir") + "/read/");
+
+        try (Stream<Path> child = Files.list(parent)){
+            child.forEach((Path path) -> System.out.println(path.toAbsolutePath())
+            );
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         // 最初の行を空白に
-            System.out.println();
-            System.out.println("検索する文字列を入力できます...");
-            System.out.println();
-            System.out.println("---------------------------------------------------");
-            System.out.println();
-            System.out.print("> ");
+        System.out.println();
+        System.out.println("---------------------------------------------------");
+        System.out.println();
+        System.out.println("検索する文字列を入力できます...");
+        System.out.println();
+        System.out.println("---------------------------------------------------");
+        System.out.println();
+        System.out.print("> ");
 
-            try {
-                // ロック処理、更新処理
-                writelock.lock();
-                lock.lock();
+        try {
+            // ロック処理、更新処理
+            writelock.lock();
+            lock.lock();
 
-                String env;
+            String env;
 
-                // readerにutf-8をセット
-                BufferedReader reader = new BufferedReader(
-                        new InputStreamReader((System.in), StandardCharsets.UTF_8));
+            // readerにutf-8をセット
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader((System.in), StandardCharsets.UTF_8));
 
-                env = reader.readLine();
+            env = reader.readLine();
 
-                // ファイルを読み込む
-                File file = new File(System.getProperty("user.dir") + "/read/Sample.rb");
-                FileReader filer = new FileReader(file);
-                BufferedReader buffer = new BufferedReader(filer);
+            // ファイルを読み込む
+            FileReader filer = new FileReader(file);
+            BufferedReader buffer = new BufferedReader(filer);
 
-                String str;
-                int num = 0;
+            String str;
+            int num = 0;
 
-                while ((str = buffer.readLine()) != null) {
+            while ((str = buffer.readLine()) != null) {
 
-                    // 行番号加算
-                    num++;
+                // 行番号加算
+                num++;
 
-                    // 検索する文字列 or 正規表現パターン
-                    Pattern pattern = Pattern.compile(env);
-                    Matcher matcher = pattern.matcher(str);
+                // 検索する文字列 or 正規表現パターン
+                Pattern pattern = Pattern.compile(env);
+                Matcher matcher = pattern.matcher(str);
 
-                    while (matcher.find()) {
-                        System.out.println(num + " " + str);
-                    }
+                while (matcher.find()) {
+                    System.out.println(num + " " + str);
                 }
+            }
 
-                buffer.close();
-                filer.close();
+            buffer.close();
+            filer.close();
+            thread.join();
 
-                thread.join();
+            StringBuilder.class.newInstance();
 
-            } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-                thread.interrupt();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+            thread.interrupt();
 
-            } finally {
+        } catch (IllegalAccessException | InstantiationException e) {
+            e.printStackTrace();
+        } finally {
 
                 /* ロック開放 */
-                writelock.unlock();
-                System.out.println();
-                System.out.println("---------------------------------------------------");
+            writelock.unlock();
+            System.out.println();
+            System.out.println("---------------------------------------------------");
         }
     }
 }

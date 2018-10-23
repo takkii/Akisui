@@ -1,3 +1,5 @@
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)[![GitHub release](https://img.shields.io/github/release/takkii/Akisui.svg?style=flat)](GitHub)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/Akisui.svg?style=flat)](GitHub)
+
 ------------------------------------------------------------------------
 個人開発プロジェクト
 ------------------------------------------------------------------------

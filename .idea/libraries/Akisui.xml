@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Akisui">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Akisui_jar/Akisui.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

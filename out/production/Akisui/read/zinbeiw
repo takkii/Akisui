@@ -1,0 +1,972 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+# vim: filetype=ruby
+
+# require 'tanraku'
+
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+class Emerald
+  attr_accessor :fibonacci, :fizzbizz, :version, :kurage
+
+  def version
+    print 'Rubyのバージョン情報を出力します...'
+    print 'Ruby version is ' + RUBY_VERSION
+    puts ''
+  end
+
+  def fibonacci
+    puts 'フィボナッチ数列を出力します! '
+    puts ''
+    lo = 1
+    hi = 1
+    print lo
+    print ' '
+    while hi < 50
+      print hi
+      hi = lo + hi
+      lo = hi - lo
+      print ' '
+    end
+    puts ''
+  end
+
+  def fizzbizz
+    puts 'FizzBizz問題の出力結果です!'
+    puts ''
+    (1..15).each do |t|
+      if t % 15 == 0
+        print 'FizzBizz'
+      elsif t % 3 == 0
+        print 'Fizz'
+      elsif t % 5 == 0
+        print 'Bizz'
+      else
+        print t
+      end
+      print ' '
+    end
+    puts ''
+  end
+
+  def kurage
+    a = rand(15)
+    print '~'
+    0.upto(a) do
+      print '~'
+    end
+    puts '＜コ：彡'
+    puts ''
+  end
+end
+
+saikoro = Random.rand(4)
+case saikoro
+when 2 then
+  Emerald.new.kurage
+when 1 then
+  Emerald.new.fibonacci
+when 0 then
+  Emerald.new.fizzbizz
+else
+  Emerald.new.version
+end
+
+puts ''
+puts 'まずは、helpと入力してください!コマンドがわかります!'
+
+# search words
+
+begin
+  str = %w[sessi kashi exit help].map!(&:freeze).freeze
+
+  once = %w[find delete remove rename makefolder wordcount NumberGame Encode week].map!(&:freeze).freeze
+
+  lucky = %w[loto6 Numbers kuji].map!(&:freeze).freeze
+
+  dark = %w[OneRunner Eval].map!(&:freeze).freeze
+
+  denki = %w[Anpea Volt Rister].map!(&:freeze).freeze
+
+  kasa = %w[exit fibonacci2 fizz rss result].map!(&:freeze).freeze
+
+  print '>'
+
+  # search words exit!
+
+  # Wainting Action code!
+
+  while (line = ARGF.gets)
+
+    line.chomp!
+
+    if line.match?(str[0])
+      def seru(b)
+        y = (b - 32) * 5 / 9
+        y
+      end
+      puts '華氏を入力してください!'
+        .print '>'
+      f = gets.to_i
+      m = seru(f)
+      puts "摂氏は、#{m.round}です。"
+
+      print '>'
+
+    elsif line.match?(str[1])
+      def seru(b)
+        y = (1.8 * b) + 32
+        y
+      end
+      puts '摂氏を入力してください！'
+      print '>'
+      f = gets.to_i
+      m = seru(f)
+      puts "華氏は、#{m.round}です。"
+
+      print '>'
+
+    elsif line.match?(str[2])
+      GC.start
+      exit!
+    elsif line.match?(lucky[0])
+
+      class Loto6
+        def sum(a, b, c, d, e, f)
+          x = Random.rand(a) + 1
+          y = Random.rand(b) + 1
+          z = Random.rand(c) + 1
+          s = Random.rand(d) + 1
+          t = Random.rand(e) + 1
+          d = Random.rand(f) + 1
+          [x, y, z, s, t, d]
+        end
+      end
+
+      taka = Loto6.new
+      n = taka.sum(43, 43, 43, 43, 43, 43)
+
+      puts 'Loto6で参考にする数字をランダムで表示します！'
+      puts ''
+      print n
+      print ' '
+      puts ''
+      puts ''
+      puts '※当たるも八卦、当たらぬも八卦。勝負は時の運です。'
+
+      print '>'
+
+    elsif line.match?(lucky[1])
+      puts 'ナンバーズで参考にする数字をランダムで表示します！'
+      puts ''
+      class Numbers
+        def sum(a, b, c, d)
+          x = Random.rand(a)
+          y = Random.rand(b)
+          z = Random.rand(c)
+          s = Random.rand(d)
+          [x, y, z, s]
+        end
+      end
+
+      taka = Numbers.new
+      p taka.sum(10, 10, 10, 10)
+      puts ''
+      puts '※当たるも八卦、当たらぬも八卦。勝負は時の運です。'
+
+      print '>'
+
+    elsif line.match?(lucky[2])
+      puts '今日の運勢を占ってみましょう。'
+      puts '大吉→中吉→吉→小吉→凶→大凶'
+
+      a = rand(16)
+
+      case a
+      when 0..2
+        puts '大吉'
+        puts 'さぁ、外に出て頑張ろう。仕事へGo!'
+      when 3..5
+        puts '中吉'
+        puts 'ほどほどな普通。ストレスと向き合え!'
+      when 6..8
+        puts '吉'
+        puts 'だんだん疲れてきたんだな。ゆっくり休め!'
+      when 9..11
+        puts '小吉'
+        puts 'あまりいいことがないから、ジッとしているに限る。'
+      when 12..14
+        puts '凶'
+        puts 'ピンチのあとのチャンス到来。あきらめるな。'
+      when 15..16
+        puts '大凶'
+        puts '今日は何かまずい気をつけろ!'
+      else
+        puts '数字があふれています！注意！'
+      end
+      print '>'
+
+    elsif line.match?(dark[0])
+
+      begin
+        puts '
+        ワンライナー、１行コードの館へようこそ。さぁ、はじめましょう！'
+        print '>'
+        re = gets.chomp
+        puts ''
+        eval(re)
+        puts ''
+      rescue StandardError => et
+        p et
+        print '>'
+        puts 'エラーです。文字列を確認してください！'
+        puts ''
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+
+      print '>'
+
+    elsif line.match?(denki[0])
+
+      def anpea(a, b)
+        x = b / a
+        x
+      end
+
+      puts
+      puts '抵抗を入力してください'
+
+      print '>'
+      f = gets.to_i
+
+      puts
+      puts '電圧を入力してください'
+      print '>'
+
+      g = gets.to_i
+
+      m = anpea(f, g)
+
+      puts
+      puts "電流は#{m.round}です。"
+
+      print '>'
+
+    elsif line.match?(denki[1])
+
+      def volt(c, d)
+        y = c * d
+        y
+      end
+
+      puts
+      puts '抵抗を入力してください'
+      print '>'
+
+      h = gets.to_i
+      puts
+      puts '電流を入力してください'
+
+      print '>'
+      i = gets.to_i
+
+      j = volt(h, i)
+
+      puts
+      puts "電圧は#{j.round}です。"
+
+      print '>'
+
+    elsif line.match?(denki[2])
+
+      def rister(k, l)
+        z = k / l
+        z
+      end
+
+      puts
+      puts '電流を入力してください'
+      print '>'
+
+      l = gets.to_i
+      puts
+      puts '電圧を入力してください'
+
+      print '>'
+      k = gets.to_i
+
+      q = rister(k, l)
+
+      puts
+      puts "抵抗は#{q.round}です。"
+
+      print '>'
+
+      # It is a help document of zinbeic.
+
+    elsif line.match?(str[3])
+
+      puts 'COMMAND'.center(60, '-')
+
+      puts '
+
+sessi       華氏から摂氏へ変換します
+
+kashi       摂氏から華氏へ変換します
+
+kuji        今日の運勢を乱数を使って占います
+
+Numbers     Numbers４の候補となる数字を乱数を使って出力します
+
+loto6       Loto６の候補となる数字を乱数を使って出力します
+
+OneRunner   ワンライナーの館へ案内します
+
+delete      ファイルを指定して削除できます
+
+find        単語を探します
+
+remove      フォルダを消します
+
+rename      ファイルの名前を変えます
+
+makefolder  フォルダを作成します
+
+wordcount   対象のファイル全体を％で単語カウントします
+
+NumberGame  数字当てゲームです
+
+Encode      文字列のエンコードを評価します
+
+Eval        eval族の館へようこそ、足し算などが行えます
+
+Anpea       オームの法則を使い、電流を調べます
+
+Volt        オームの法則を使い、電圧を調べます
+
+Rister      オームの法則を使い、抵抗を調べます
+
+week        太陽暦で日付の曜日を真と偽で判定します
+
+fibonacci2  指定した数字のフィボナッチ数列を表示します
+
+fizz        指定した数字のFizzBizz解答を表示します
+
+rss         RSS投稿時間帯を判別します
+
+result      rssの記号を個数としてカウントします
+
+終了は、exitと入力します...
+
+'
+
+      puts 'COMMAND'.center(60, '-')
+
+      print '>'
+
+      # It is a help document of zinbeic exit!
+
+      # The command which can be called is only once. 　
+    elsif line.match?(once[0])
+
+      begin
+        print '探したい文字列を入力してください：　'
+        re = gets.chomp
+      rescue StandardError => et
+        p et
+        puts 'エラーです。文字列を確認してください！'
+        retry
+      end
+
+      begin
+        print '探したいフォルダのパスを指定してください：　'
+        fo = gets.chomp
+      rescue StandardError => es
+        p es
+        puts 'エラーです。文字列を確認してください！'
+      end
+
+      begin
+        Dir.chdir(fo)
+      rescue Errno::EEXIST
+        Errno::EEXIST
+      end
+
+      begin
+        print 'ファイル名を拡張子を含んで入力してください：　'
+
+        filename = gets.chomp
+        File.open(filename) do |d|
+          puts ' '
+
+          while (liner = d.gets)
+            liner.chomp!
+            next unless liner.match?(re)
+            printf('%4d 行目 : %s ', d.lineno, liner)
+            print '： Find!(発見!)'
+            puts ' '
+            puts ' '
+          end
+        end
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。ファイル名を確認してください。\ｎ'
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+      print '>'
+
+    elsif line.match?(once[1])
+
+      begin
+        print '消したいフォルダのパスを指定してください：　'
+        mo = gets.chomp
+      rescue StandardError => es
+        p es
+        puts 'エラーです。文字列を確認してください！'
+      end
+
+      begin
+        Dir.chdir(mo)
+      rescue Errno::EEXIST
+        Errno::EEXIST
+      end
+
+      begin
+        print 'ファイル名を拡張子を含んで入力してください：　'
+
+        del = readline.chomp!
+        File.delete(del)
+
+        puts '削除しました。'
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。ファイル名を確認してください。\ｎ'
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+      print '>'
+
+    elsif line.match?(once[2])
+
+      begin
+        print '削除したいフォルダのパスを指定してください：　'
+        st = gets.chomp
+      rescue StandardError => es
+        p es
+        puts 'エラーです。文字列を確認してください！'
+      end
+
+      begin
+        Dir.chdir(st)
+      rescue Errno::EEXIST
+        Errno::EEXIST
+      end
+
+      begin
+        print '削除したいフォルダ名を拡張子を含んで入力してください：　'
+
+        rem = readline.chomp!
+        Dir.rmdir(rem)
+
+        puts '削除しました。'
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。ファイル名を確認してください。\ｎ'
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+      print '>'
+    elsif line.match?(once[3])
+
+      begin
+        print '名前を変えたいフォルダのパスを指定してください：　'
+        nem = gets.chomp
+      rescue StandardError => es
+        p es
+        puts 'エラーです。文字列を確認してください！'
+      end
+
+      begin
+        Dir.chdir(nem)
+      rescue Errno::EEXIST
+        Errno::EEXIST
+      end
+
+      begin
+        print '現在のファイル名を拡張子を含んで入力してください：　'
+        re = gets.chomp!
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。ファイル名を確認してください。\ｎ'
+        retry
+      end
+
+      begin
+        print '変更するファイル名を拡張子を含んで入力してください：　'
+
+        no = gets.chomp!
+
+        File.rename(re, no)
+
+        puts '変更しました。'
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。ファイル名を確認してください。\ｎ'
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+
+      print '>'
+    elsif line.match?(once[4])
+
+      begin
+        print '作成したいフォルダのパスを指定してください：　'
+        mk = gets.chomp
+      rescue StandardError => es
+        p es
+        puts 'エラーです。文字列を確認してください！'
+      end
+
+      begin
+        Dir.chdir(mk)
+      rescue Errno::EEXIST
+        Errno::EEXIST
+      end
+
+      begin
+        print 'フォルダ名を入力してください：　'
+
+        ma = readline.chomp!
+        Dir.mkdir(ma)
+
+        puts '作成しました。'
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。ファイル名を確認してください。\ｎ'
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+
+      print '>'
+    elsif line.match?(once[5])
+
+      begin
+        print '探したいフォルダのパスを指定してください：　'
+        mik = gets.chomp
+      rescue StandardError => es
+        p es
+        puts 'エラーです。文字列を確認してください！'
+      end
+
+      begin
+        Dir.chdir(mik)
+      rescue Errno::EEXIST
+        Errno::EEXIST
+      end
+
+      begin
+        print '数えたいファイル名を拡張子を含んで入力してください：　'
+
+        count = Hash.new(0)
+
+        # 文字列の出現頻度を調べる。
+        def char_stat(str)
+          table = Hash.new(0)
+          str.scan(/./m) do |ch|
+            table[ch] += 1
+          end
+          table.to_a.sort_by { |_, con| -con }
+        end
+
+        # 単語の集計
+        filename = gets.chomp
+        File.open(filename) do |d|
+          while line == d.gets
+            wa = line.split
+            wa.each do |w|
+              count[w] += 1
+            end
+          end
+
+          # 結果の出力
+
+          count.sort_by { |a| a[1] }.each do |_web, _con|
+            print '#{web.inspect}: '
+            print '#{con % 100 / wa.length}%'
+            puts ' '
+            puts ' '
+          end
+        end
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。ファイル名を確認してください。\ｎ'
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+
+      print '>'
+
+    elsif line.match?(once[6])
+
+      x = Random.rand(1..100)
+      numb = 0
+      numb += 1
+
+      puts '何回まで、NumberGameで繰り返すか指定してください'
+      print '>'
+      num = gets.chomp.to_i
+      puts "#{num}回、繰り返すまでに当ててください"
+      puts
+      puts '1~100までの数字をいれてくださいNumberGameスタート！'
+      print '>'
+
+      num.times do |z|
+        i_num = gets.chomp.to_i
+        if i_num < z
+          puts 'コンピュータの選んだ数字の方が大きいため大きい数字を入力してください'
+          print '>'
+          numb += 1
+        elsif i_num > z
+          puts 'コンピュータの選んだ数字の方が小さいため小さい数字を入力してください'
+          print '>'
+          numb += 1
+        else i_num == x
+             puts
+             puts 'おめでとうございます、正解です'
+             puts
+             puts '#{numb}回で正解しました'
+             puts
+             break
+        end
+        if i == (num - 1)
+          puts
+          puts '正解は' + x.to_s + 'でした'
+          puts
+          puts '残念、もう一度チャレンジ！'
+          puts
+        end
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです、数字を確認してください\ｎ'
+        retry
+      end
+
+      puts 'お疲れさまでした。'
+
+      print '>'
+
+    elsif line.match?(once[7])
+
+      puts ''
+
+      class Enco
+        begin
+          puts '文字列を入力してください'
+          print '>'
+          filename = gets.chomp
+        rescue StandardError => ee
+          p ee
+          puts 'エラーです。文字列を確認してください！'
+        end
+
+        puts ''
+        puts '変更前のエンコードを指定してください'
+        puts 'ISO-2022-JP,SJIS,eucJP,UTF-8　が候補です。'
+        print '>'
+        befenco = gets.chomp
+
+        begin
+          puts ''
+          puts 'エンコードを指定してください'
+          puts 'ISO-2022-JP,SJIS,eucJP,UTF-8　が候補です。'
+          print '>'
+          aftenco = gets.chomp
+          puts
+        rescue StandardError => ed
+          p ed
+          puts 'エラーです。エンコーディングを確認してください！'
+        end
+
+        ut = Encoding::Converter.new(befenco, aftenco)
+        p ut.convert(filename)
+        ut.finish.dump
+        puts
+
+      ensure
+        puts '終了は exit を入力してください！'
+        puts
+      end
+
+      print '>'
+
+    elsif line.match?(dark[1])
+      begin
+        puts 'eval族の館へようこそ...簡単な文字列を評価してください!'
+        print '>'
+        re = gets.chomp
+        puts ''
+        p eval(re)
+        puts ''
+      rescue StandardError => et
+        p et
+        print '>'
+        puts 'エラーです。文字列を確認してください！'
+        puts ''
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+      print '>'
+
+    elsif line.match?(once[8])
+      puts ''
+      puts '日付の曜日をtrue,falseで判定します'
+      puts '半角数字で入力してください'
+      puts 'それでは、スタート！'
+      puts ''
+
+      begin
+        puts '調べたい年を入力してください'
+        print '>'
+        nen = gets.chomp.to_i
+      rescue StandardError => ee
+        p ee
+        puts 'エラーです。数字を確認してください！'
+      end
+
+      puts ''
+
+      begin
+        puts '調べたい月を入力してください'
+        print '>'
+        mon = gets.chomp.to_i
+      rescue StandardError => ey
+        p ey
+        puts 'エラーです。数字を確認してください！'
+      end
+
+      puts ''
+
+      begin
+        puts '調べたい日を入力してください'
+        print '>'
+        days = gets.chomp.to_i
+      rescue StandardError => ex
+        p ex
+        puts 'エラーです。数字を確認してください！'
+      end
+
+      puts ''
+
+      t = Time.local(nen, mon, days)
+
+      print '日曜日ですか？：'
+      puts  t.sunday?
+      print '月曜日ですか？：'
+      puts t.monday?
+      print '火曜日ですか？：'
+      puts  t.tuesday?
+      print '水曜日ですか？：'
+      puts  t.wednesday?
+      print '木曜日ですか？：'
+      puts  t.thursday?
+      print '金曜日ですか？：'
+      puts  t.friday?
+      print '土曜日ですか？：'
+      puts t.saturday?
+
+      puts
+
+      print '>'
+
+    elsif line.match?(kasa[0])
+
+      GC.start
+      exit!
+
+    elsif line.match?(kasa[1])
+      puts ''
+      begin
+        puts 'fibonacciのカウント回数を入力してください'
+        puts ''
+        print '>'
+        num = gets.chomp.to_i
+      rescue StandardError => err
+        p err
+        puts 'エラーです。数字を入力してください！'
+      end
+      puts ''
+      puts 'フィボナッチ数列を出力します! '
+      puts ''
+      lo = 1
+      hi = 1
+      print lo
+      print ' '
+      while hi < num
+        print hi
+        hi = lo + hi
+        lo = hi - lo
+        print ' '
+      end
+      puts ''
+      print '>'
+
+    elsif line.match?(kasa[2])
+      puts ''
+      begin
+        puts 'FizzBizzのカウント回数を入力してください'
+        puts ''
+        print '>'
+        nu = gets.chomp.to_i
+      rescue StandardError => esx
+        p esx
+        puts 'エラーです。数字を入力してください！'
+      end
+      puts ''
+      puts 'FizzBizz問題の出力結果です!'
+      puts ''
+      (1..nu).each do |t|
+        if t % 15 == 0
+          print 'FizzBizz'
+        elsif t % 3 == 0
+          print 'Fizz'
+        elsif t % 5 == 0
+          print 'Bizz'
+        else
+          print t
+        end
+        print ' '
+      end
+      puts ''
+      puts ''
+      print '>'
+
+    elsif line.match?(kasa[3])
+
+      require 'rss'
+      require 'date'
+      require 'kconv'
+
+      # date = Time.new.strftime('現在時刻 ： %Y年%m月%d日 %H時%M分')
+
+      begin
+        puts '調べたいRSSのURLを入力してください'
+        print '>'
+        URL = gets.chomp
+      rescue StandardError => es
+        p es
+        puts 'エラーです。URLを確認してください！'
+      end
+
+      rss = RSS::Parser.parse(URL)
+
+      rss.items.collect do |scale|
+        # puts scale.pubDate.strftime '投稿時刻 ： %Y年%m月%d日 %H時%M分'
+        # scale.pubDate.strftime '%H'
+
+        v = /[1][0-9]/
+        w = /[0][0-9]/
+        x = /[2][0-4]/
+        s = scale.pubDate.strftime '%H'
+
+        if s.match?(v)
+          print '#'
+          print ' '
+        elsif s.match?(w)
+          print '$'
+          print ' '
+        elsif s.match?(x)
+          print '@'
+          print ' '
+          # print ' '
+          # puts scale.title
+          # puts scale.link
+          # puts scale.description
+          # print ' '
+        end
+      end
+      puts ''
+      print '>'
+
+    elsif line.match?(kasa[4])
+
+      begin
+        puts 'rssの出力結果を貼り付けてください'
+        print '>'
+        re = gets.chomp
+      rescue StandardError => ee
+        p ee
+        puts 'エラーです。数字を確認してください！'
+      end
+
+      puts 'ログの最近の投稿時間を判別します...'
+
+      str = re.split('')
+
+      puts''
+      print '20～24時に投稿した回数は...'
+      print str.count('@')
+      puts ' 回あります'
+      print '0時から9時に投稿した回数は...'
+      print str.count('$')
+      puts ' 回あります'
+      print '10時から19時に投稿した回数は...'
+      print str.count('#')
+      puts ' 回あります'
+
+      puts ''
+      enum = [str.count('@'), str.count('$'), str.count('#')]
+
+      q = enum.max
+      t = enum.min
+
+      puts '最も多い数字は ' + q.to_s + ' 回です'
+      puts '最も少ない数字は ' + t.to_s + ' 回です'
+
+      puts ''
+      print '合計 '
+      print str.count('@') + str.count('$') + str.count('#')
+      puts ' 回です'
+      puts ''
+
+      print '>'
+
+    else
+      puts "Can't Enter this Words. Please input help"
+      print '>'
+    end
+  end
+
+  print '>'
+
+# The command which can be called is only once.
+# Wainting Action Code exit!
+
+# Exception throw!
+rescue SystemCallError => exes
+  puts exes.backtrace
+rescue IOError => ee
+  puts ee.backtrace
+rescue Exception => e
+  puts e.backtrace
+rescue StandardError => exed
+  p exed
+  puts '処理を終了しています、もう一度exitを入力してください...'
+  retry
+
+# Ruby ensure is Java Exception of finally.
+ensure
+  puts '終了は exit を入力してください！'
+end
+
+__END__

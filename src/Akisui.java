@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 import java.util.concurrent.locks.*;
 import java.util.stream.Stream;
 
-class MyHandler implements Thread.UncaughtExceptionHandler{
+class MyHandler implements Thread.UncaughtExceptionHandler {
 
     @Override
     public void uncaughtException(Thread t, Throwable ex) {
@@ -20,7 +20,7 @@ class MyHandler implements Thread.UncaughtExceptionHandler{
 
 public class Akisui extends Thread {
 
-    @SuppressWarnings({"unchecked","varargs"})
+    @SuppressWarnings({"unchecked", "varargs"})
 
     public static void main(String[] args) {
 
@@ -41,16 +41,18 @@ public class Akisui extends Thread {
         // ファイルが読み込み可能か調べる
         File file = new File(System.getProperty("user.dir") + "/read/zinbeiw");
         boolean canRead = file.canRead();
+
         System.out.println("---------------------------------------------------");
         System.out.println();
         System.out.println("読み込み可・不可を判定 : " + canRead);
-        System.out.println("");
+        System.out.println();
         System.out.println("---------------------------------------------------");
         System.out.println();
 
         Path parent = Paths.get(System.getProperty("user.dir") + "/read/");
 
-        try (Stream<Path> child = Files.list(parent)){
+        // ディレクトリ情報を読み取る
+        try (Stream<Path> child = Files.list(parent)) {
             child.forEach((Path path) -> System.out.println(path.toAbsolutePath())
             );
         } catch (IOException e) {
@@ -105,17 +107,13 @@ public class Akisui extends Thread {
             filer.close();
             thread.join();
 
-            StringBuilder.class.newInstance();
-
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
             thread.interrupt();
 
-        } catch (IllegalAccessException | InstantiationException e) {
-            e.printStackTrace();
         } finally {
 
-                /* ロック開放 */
+            /* ロック開放 */
             writelock.unlock();
             System.out.println();
             System.out.println("---------------------------------------------------");

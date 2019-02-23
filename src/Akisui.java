@@ -20,7 +20,7 @@ class MyHandler implements Thread.UncaughtExceptionHandler {
 
 public class Akisui extends Thread {
 
-    @SuppressWarnings({"unchecked", "varargs"})
+    @SuppressWarnings({"varargs"})
 
     public static void main(String[] args) {
 

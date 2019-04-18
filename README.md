@@ -55,7 +55,7 @@ java -jar Akisui.jar
 [読み込みファイル指定]
 
 /read/zinbeiw 
-(zinbei2/bin/zinbeiw → Akisui/readへ移動、読み込み指定)
+> プロジェクト内指定フォルダに設定済み
 
 ※ Ruby製zinbeijettのengineより強力で私のこだわりに近いです。
 ```

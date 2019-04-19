@@ -54,10 +54,7 @@ java -jar Akisui.jar
 > Akisui内フォルダ/ファイル指定ができます
 > 探したい文字列 or 正規表現
 
-[読み込みファイル指定]
-
-/read/zinbeiw 
-> プロジェクト内指定フォルダに設定済み
+※ /read/zinbeiwの指定を外しました。
 
 ※ Ruby製zinbeijettのengineより強力で私のこだわりに近いです。
 ```

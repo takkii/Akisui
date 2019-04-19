@@ -50,6 +50,8 @@
 git clone https://github.com/takkii/Akisui.git
 cd ~/Akisui/out/artifacts/Akisui_jar
 java -jar Akisui.jar
+
+> Akisui内フォルダ/ファイル指定ができます
 > 探したい文字列 or 正規表現
 
 [読み込みファイル指定]

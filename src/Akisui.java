@@ -39,9 +39,9 @@ public class Akisui extends Thread {
         thread.start();
 
         // ファイルが読み込み可能か調べる
-        System.out.println("現在、Akisuiフォルダ内にいます...読み込みたいフォルダとファイルを指定してください...");
+        System.out.println("調べたいディレクトリのPATHとファイル名を指定してください...");
         BufferedReader infile = new BufferedReader(new InputStreamReader(System.in));
-        File file = new File(System.getProperty("user.dir") + infile.readLine());
+        File file = new File(infile.readLine());
         boolean canRead = file.canRead();
 
         System.out.println("---------------------------------------------------");

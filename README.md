@@ -41,7 +41,8 @@
 ・再コードフォーマットをしました。
 ・デバッグを行い、不要なメソッドを削除しました。
 ・/read/zinbeiwの読込指定を解除しました。
-・Akisuiフォルダ内ファイルを探索できます。
+・Akisuiフォルダ内ファイルを探索を解除しました。
+・ディレクトリのPATHとファイル名を指定できます。
 ```
 
 使い方
@@ -53,14 +54,12 @@ git clone https://github.com/takkii/Akisui.git
 cd ~/Akisui/out/artifacts/Akisui_jar
 java -jar Akisui.jar
 
-[ Akisui内フォルダ/ファイル指定 ]
-※ 実行中の自分ファイルを読めます。
-
-( 例 )
-$ /src/Akisui.java
+[ フォルダ/ファイル 指定 ]
+(例) D:/Akisui/src/Akisui.java
 
 [ 探したい文字列 or 正規表現 ]
 $ System
+or
 $ [S]
 
 ※ Ruby製zinbeijettのengineより強力で私のこだわりに近いです。

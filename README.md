@@ -40,6 +40,8 @@
 ・出力時、行番号を表示するようにしました。
 ・再コードフォーマットをしました。
 ・デバッグを行い、不要なメソッドを削除しました。
+・/read/zinbeiwの読込指定を解除しました。
+・Akisuiフォルダ内ファイルを探索できます。
 ```
 
 使い方
@@ -51,10 +53,15 @@ git clone https://github.com/takkii/Akisui.git
 cd ~/Akisui/out/artifacts/Akisui_jar
 java -jar Akisui.jar
 
-> Akisui内フォルダ/ファイル指定ができます
-> 探したい文字列 or 正規表現
+[ Akisui内フォルダ/ファイル指定 ]
+※ 実行中の自分ファイルを読めます。
 
-※ /read/zinbeiwの指定を外しました。
+( 例 )
+$ /src/Akisui.java
+
+[ 探したい文字列 or 正規表現 ]
+$ System
+$ [S]
 
 ※ Ruby製zinbeijettのengineより強力で私のこだわりに近いです。
 ```

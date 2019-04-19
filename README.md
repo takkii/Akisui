@@ -51,6 +51,9 @@
 [java]
 ・JDK8に対応しました。
 
+[エンコーディング]
+・完全なUTF-8 ( SJISなどの漢字は特に文字化けします )
+
 [実行手順]
 
 git clone https://github.com/takkii/Akisui.git

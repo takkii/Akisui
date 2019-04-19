@@ -22,7 +22,7 @@ public class Akisui extends Thread {
 
     @SuppressWarnings({"varargs"})
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         ReentrantReadWriteLock locks;
         locks = new ReentrantReadWriteLock();
@@ -39,7 +39,9 @@ public class Akisui extends Thread {
         thread.start();
 
         // ファイルが読み込み可能か調べる
-        File file = new File(System.getProperty("user.dir") + "/read/zinbeiw");
+        System.out.println("現在、Akisuiフォルダ内にいます...読み込みたいフォルダとファイルを指定してください...");
+        BufferedReader infile = new BufferedReader(new InputStreamReader(System.in));
+        File file = new File(System.getProperty("user.dir") + infile.readLine());
         boolean canRead = file.canRead();
 
         System.out.println("---------------------------------------------------");

@@ -29,8 +29,8 @@ public class Akisui extends Thread {
 
         final ReentrantLock lock;
         lock = new ReentrantLock();
-        Lock writelock;
-        writelock = locks.writeLock();
+        Lock locker;
+        locker = locks.writeLock();
 
         // 非同期処理を使う
         Thread thread = new Thread();
@@ -71,7 +71,7 @@ public class Akisui extends Thread {
 
         try {
             // ロック処理、更新処理
-            writelock.lock();
+            locker.lock();
             lock.lock();
 
             String env;
@@ -114,7 +114,7 @@ public class Akisui extends Thread {
         } finally {
 
             /* ロック開放 */
-            writelock.unlock();
+            locker.unlock();
             System.out.println();
             System.out.println("---------------------------------------------------");
         }

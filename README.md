@@ -48,6 +48,9 @@
 使い方
 
 ```text
+[java]
+・JDK8に対応しました。
+
 [実行手順]
 
 git clone https://github.com/takkii/Akisui.git

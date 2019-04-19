@@ -39,27 +39,23 @@ public class Akisui extends Thread {
         thread.start();
 
         // ファイルが読み込み可能か調べる
+        System.out.println("---------------------------------------------------------------");
+        System.out.println();
         System.out.println("調べたいディレクトリのPATHとファイル名を指定してください...");
+        System.out.println();
+        System.out.println("---------------------------------------------------------------");
+        System.out.println();
+        System.out.print("> ");
         BufferedReader infile = new BufferedReader(new InputStreamReader(System.in));
         File file = new File(infile.readLine());
+        System.out.println();
         boolean canRead = file.canRead();
-
         System.out.println("---------------------------------------------------");
         System.out.println();
         System.out.println("読み込み可・不可を判定 : " + canRead);
         System.out.println();
         System.out.println("---------------------------------------------------");
         System.out.println();
-
-        Path parent = Paths.get(System.getProperty("user.dir") + "/read/");
-
-        // ディレクトリ情報を読み取る
-        try (Stream<Path> child = Files.list(parent)) {
-            child.forEach((Path path) -> System.out.println(path.toAbsolutePath())
-            );
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         // 最初の行を空白に
         System.out.println();

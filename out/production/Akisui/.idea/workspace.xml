@@ -11,33 +11,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Akisui_jar/Akisui.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Akisui_jar/read/zinbeiw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Akisui/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Akisui/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Akisui/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/index-files/index-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/index-files/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/index-files/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/src/Akisui.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/src/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/src/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/src/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/doc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/read/zinbeiw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/src/Akisui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Akisui/src/Akisui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Akisui/src/MyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Akisui/src/MyHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Akisui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Akisui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Akisui/src/Akisui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Akisui/src/MyHandler.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Akisui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="1080">
               <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="287">
-                <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+              <first_editor relative-caret-position="-604">
+                <caret line="24" selection-start-line="24" selection-end-line="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -80,8 +55,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Akisui.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -96,6 +71,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,23 +80,10 @@
               <item name="Akisui" type="b2602c69:ProjectViewProjectNode" />
               <item name="Akisui" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Akisui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Akisui" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Akisui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Akisui" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,7 +91,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../OpenJDK/jdk8u192-b12" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -180,7 +144,9 @@
       <workItem from="1555631806128" duration="1186000" />
       <workItem from="1555658365637" duration="103000" />
       <workItem from="1555658471283" duration="2962000" />
-      <workItem from="1555665997276" duration="2892000" />
+      <workItem from="1555665997276" duration="4983000" />
+      <workItem from="1555728150988" duration="157000" />
+      <workItem from="1555729401556" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="Update, README.md message change.">
       <created>1555594055037</created>
@@ -252,16 +218,37 @@
       <option name="project" value="LOCAL" />
       <updated>1555672331708</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update, use case pattern matcher.">
+      <created>1555673807014</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555673807014</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update, encoding message.">
+      <created>1555678403457</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555678403457</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update, README.md.">
+      <created>1555729501153</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555729501153</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8886000" />
+    <option name="totallyTimeSpent" value="11281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="70" width="1738" height="932" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16448152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16805722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -270,7 +257,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32912987" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32912987" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35056746" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -306,26 +293,29 @@
     <MESSAGE value="Update, jar file." />
     <MESSAGE value="Delete, no use file." />
     <MESSAGE value="Update, change log." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update, change log." />
+    <MESSAGE value="Update, use case pattern matcher." />
+    <MESSAGE value="Update, encoding message." />
+    <MESSAGE value="Update, README.md." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update, README.md." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="287">
-            <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/Akisui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Akisui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-604">
+            <caret line="24" selection-start-line="24" selection-end-line="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

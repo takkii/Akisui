@@ -73,3 +73,7 @@ $ [S]
 ```
 
 ![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/image/Duke_Blueprint.gif)
+
+※ サンプル動画
+
+![akisui sample](https://github.com/takkii/Akisui/blob/master/image/akisui.gif)

@@ -54,7 +54,6 @@ public class Akisui extends Thread {
         System.out.println();
         System.out.println("---------------------------------------------------");
         System.out.println();
-
         // 最初の行を空白に
         System.out.println();
         System.out.println("---------------------------------------------------");
@@ -66,6 +65,11 @@ public class Akisui extends Thread {
         System.out.print("> ");
 
         try {
+            // 読み込みがfalseのとき、例外発生。
+            if (!canRead) {
+                throw new Exception();
+            }
+
             // ロック処理、更新処理
             locker.lock();
             lock.lock();
@@ -99,11 +103,12 @@ public class Akisui extends Thread {
                 }
             }
 
+
             buffer.close();
             filer.close();
             thread.join();
 
-        } catch (IOException | InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             thread.interrupt();
 

@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Akisui:jar" />
+      <artifact name="Akisui" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320166be-1a71-463c-b8db-a58621bf609d" name="Default Changelist" comment="Change, Type name change.">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Akisui_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Akisui_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+    <list default="true" id="03d84a10-2838-4e85-b99a-853205d62043" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Akisui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Akisui_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Akisui/src/Akisui.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Akisui/src/MyHandler.class" beforeDir="false" />
     </list>
@@ -26,23 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Akisui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-604">
-                <caret line="24" selection-start-line="24" selection-end-line="24" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="312">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -56,15 +45,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Akisui.java" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="78" />
-    <option name="y" value="70" />
-    <option name="width" value="1738" />
-    <option name="height" value="932" />
+    <option name="x" value="131" />
+    <option name="y" value="68" />
+    <option name="width" value="1569" />
+    <option name="height" value="943" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -80,6 +69,24 @@
               <item name="Akisui" type="b2602c69:ProjectViewProjectNode" />
               <item name="Akisui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Akisui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Akisui" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Akisui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Akisui" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Akisui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Akisui" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Akisui_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -90,11 +97,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OpenJDK/jdk8u192-b12" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+    <property name="project.structure.last.edited" value="プロジェクト" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="background.image.plus" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -108,157 +115,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Akisui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.Akisui" />
-      <module name="Akisui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Akisui" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="320166be-1a71-463c-b8db-a58621bf609d" name="Default Changelist" comment="" />
-      <created>1555593005569</created>
+      <changelist id="03d84a10-2838-4e85-b99a-853205d62043" name="Default Changelist" comment="" />
+      <created>1556359361924</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555593005569</updated>
-      <workItem from="1555593012608" duration="43000" />
-      <workItem from="1555593169097" duration="1543000" />
-      <workItem from="1555631625954" duration="157000" />
-      <workItem from="1555631806128" duration="1186000" />
-      <workItem from="1555658365637" duration="103000" />
-      <workItem from="1555658471283" duration="2962000" />
-      <workItem from="1555665997276" duration="4983000" />
-      <workItem from="1555728150988" duration="157000" />
-      <workItem from="1555729401556" duration="147000" />
+      <updated>1556359361924</updated>
+      <workItem from="1556359367670" duration="406000" />
+      <workItem from="1556359825239" duration="1299000" />
+      <workItem from="1556361916829" duration="56000" />
     </task>
-    <task id="LOCAL-00001" summary="Update, README.md message change.">
-      <created>1555594055037</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1555594055037</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Change, Type name change.">
-      <created>1555632269057</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1555632269057</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Akisui in folder and file search.">
-      <created>1555662983105</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1555662983105</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update, how to use message.">
-      <created>1555664700209</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1555664700209</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Delete, no use message.">
-      <created>1555664886551</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1555664886551</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update,README.md message.">
-      <created>1555665573112</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1555665573112</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Update, full path search mode.">
-      <created>1555671698982</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1555671698982</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Update, jar file.">
-      <created>1555672028414</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1555672028414</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Delete, no use file.">
-      <created>1555672127039</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1555672127039</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Update, change log.">
-      <created>1555672331708</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1555672331708</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Update, use case pattern matcher.">
-      <created>1555673807014</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1555673807014</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Update, encoding message.">
-      <created>1555678403457</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1555678403457</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Update, README.md.">
-      <created>1555729501153</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1555729501153</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11281000" />
+    <option name="totallyTimeSpent" value="1761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="70" width="1738" height="932" extended-state="0" />
+    <frame x="131" y="68" width="1569" height="943" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16805722" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15241882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
+      <window_info id="デザイナー" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI デザイナー" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32912987" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35056746" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -271,10 +160,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="パレット" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="キャプチャー分析" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="パレット" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
@@ -282,40 +171,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update, README.md message change." />
-    <MESSAGE value="Change, Type name change." />
-    <MESSAGE value="Akisui in folder and file search." />
-    <MESSAGE value="Update, how to use message." />
-    <MESSAGE value="Delete, no use message." />
-    <MESSAGE value="Update,README.md message." />
-    <MESSAGE value="Update, full path search mode." />
-    <MESSAGE value="Update, jar file." />
-    <MESSAGE value="Delete, no use file." />
-    <MESSAGE value="Update, change log." />
-    <MESSAGE value="Update, use case pattern matcher." />
-    <MESSAGE value="Update, encoding message." />
-    <MESSAGE value="Update, README.md." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update, README.md." />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Akisui.java">
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-604">
-            <caret line="24" selection-start-line="24" selection-end-line="24" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="8" lean-forward="true" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Akisui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -324,12 +198,20 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>Akisui:jar</last-edited>
+          <artifact-editor>
+            <show-content>
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>Akisui</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -337,7 +219,6 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -360,7 +241,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>OpenJDK-8</last-edited>
+          <last-edited>adoptopenjdk-8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -372,19 +253,6 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Akisui</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -396,7 +264,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Akisui</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

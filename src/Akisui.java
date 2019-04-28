@@ -109,7 +109,8 @@ public class Akisui extends Thread {
             thread.join();
 
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.out.println("ファイルを正常に読み込めませんでした。");
             thread.interrupt();
 
         } finally {

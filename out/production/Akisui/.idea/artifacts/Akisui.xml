@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Akisui">
-    <output-path>$PROJECT_DIR$/out/artifacts/Akisui</output-path>
-    <root id="archive" name="Akisui.jar" />
-  </artifact>
-</component>

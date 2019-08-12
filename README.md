@@ -75,6 +75,8 @@ $ [S]
 
 ![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/image/Duke_Blueprint.gif)
 
+![wgundomロゴ](https://github.com/takkii/Akisui/blob/master/image/wgundom.png)
+
 ※ サンプル動画 (バージョン： 1.0.6のとき記録)
 
 ![akisui sample](https://github.com/takkii/Akisui/blob/master/image/akisui.gif)

@@ -124,13 +124,21 @@ class Murasame extends Thread{
     }
 }
 
-public class Akisui {
+public class Akisui extends Thread {
 
     @SuppressWarnings({"varargs"})
 
     public static void main(String[] args) throws IOException {
 
-        final Murasame obj = new Murasame();
-        obj.saya();
+        try{
+          final Akisui thread = new Akisui();
+          thread.start();
+
+          final Murasame obj = new Murasame();
+          obj.saya();
+
+        } catch (Exception ed){
+          ed.printStackTrace(System.out);
+        }
     }
 }

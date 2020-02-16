@@ -138,6 +138,7 @@ public class Akisui extends Thread {
           final Murasame obj = new Murasame();
           obj.saya();
 
+          thread.join();
         } catch (Exception ed){
           ed.printStackTrace(System.out);
         }

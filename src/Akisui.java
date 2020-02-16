@@ -16,12 +16,9 @@ class MyHandler implements Thread.UncaughtExceptionHandler {
     }
 }
 
-public class Akisui extends Thread {
+class Murasame extends Thread{
 
-    @SuppressWarnings({"varargs"})
-
-    public static void main(String[] args) throws IOException {
-
+    public void saya() throws IOException {
         ReentrantReadWriteLock locks;
         locks = new ReentrantReadWriteLock();
 
@@ -120,5 +117,16 @@ public class Akisui extends Thread {
             System.out.println();
             System.out.println("---------------------------------------------------");
         }
+    }
+}
+
+public class Akisui {
+
+    @SuppressWarnings({"varargs"})
+
+    public static void main(String[] args) throws IOException {
+
+        final Murasame obj = new Murasame();
+        obj.saya();
     }
 }

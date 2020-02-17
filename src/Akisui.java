@@ -129,7 +129,7 @@ public class Akisui extends Thread {
 
     @SuppressWarnings({"varargs"})
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         try{
           final Akisui thread = new Akisui();

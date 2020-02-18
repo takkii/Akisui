@@ -12,6 +12,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// My Exception class
 class MyHandler implements Thread.UncaughtExceptionHandler {
 
     @Override
@@ -21,6 +22,7 @@ class MyHandler implements Thread.UncaughtExceptionHandler {
     }
 }
 
+// SubClass
 class Murasame extends Thread{
 
     public void saya() throws IOException {
@@ -125,6 +127,7 @@ class Murasame extends Thread{
     }
 }
 
+// SuperClass
 public class Akisui extends Thread {
 
     @SuppressWarnings({"varargs"})

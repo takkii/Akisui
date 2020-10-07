@@ -35,7 +35,7 @@ class Murasame extends Thread{
         locker = locks.writeLock();
 
         // 非同期処理を使う
-        Thread thread = new Thread();
+        Murasame thread = new Murasame();
         thread.setUncaughtExceptionHandler(new MyHandler());
         thread.setDaemon(true);
         thread.start();

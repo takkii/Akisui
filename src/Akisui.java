@@ -92,7 +92,6 @@ class Murasame extends Thread{
 
             String str;
             int num = 0;
-
             while ((str = buffer.readLine()) != null) {
 
                 // 行番号加算

@@ -120,6 +120,8 @@ class Murasame extends Thread{
 
             /* ロック開放 */
             locker.unlock();
+            lock.unlock();
+
             System.out.println();
             System.out.println("---------------------------------------------------");
         }

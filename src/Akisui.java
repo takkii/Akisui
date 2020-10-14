@@ -18,7 +18,7 @@ class MyHandler implements Thread.UncaughtExceptionHandler {
     @Override
     public void uncaughtException(Thread t, Throwable ex) {
         System.out.println("例外発生 : " + t.getId());
-        ex.printStackTrace();
+        ex.printStackTrace(System.out);
     }
 }
 

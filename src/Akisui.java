@@ -102,7 +102,7 @@ class Murasame extends Thread{
                 Matcher matcher = pattern.matcher(str);
 
                 while (matcher.find()) {
-                    System.out.println(num + " " + str);
+                    System.out.printf("%d %s%n", num, str);
                 }
             }
 

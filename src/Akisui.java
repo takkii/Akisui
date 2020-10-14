@@ -71,7 +71,7 @@ class Murasame extends Thread{
         try {
             // 読み込みがfalseのとき、例外発生。
             if (!canRead) {
-                throw new Exception();
+                throw new InterruptedException();
             }
 
             // ロック処理、更新処理
@@ -111,8 +111,8 @@ class Murasame extends Thread{
             filer.close();
             thread.join();
 
-        } catch (Exception e) {
-            //e.printStackTrace();
+        } catch (SecurityException | InterruptedException e) {
+            // e.printStackTrace(System.out);
             System.out.println("ファイルを正常に読み込めませんでした。");
             thread.interrupt();
 
@@ -131,7 +131,7 @@ public class Akisui extends Thread {
 
     @SuppressWarnings({"varargs"})
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         try{
           final Akisui thread = new Akisui();
@@ -141,7 +141,7 @@ public class Akisui extends Thread {
           obj.saya();
 
           thread.join();
-        } catch (Exception ed){
+        } catch (SecurityException | InterruptedException | IOException ed){
           ed.printStackTrace(System.out);
         }
     }

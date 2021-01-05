@@ -44,6 +44,10 @@
 ・Akisuiフォルダ内ファイルを探索を解除しました。
 ・ディレクトリのPATHとファイル名を指定できます。
 ・ファイルの読込が失敗したとき、例外を発生させました。
+・ファイルの読込が失敗したときに流れるメッセージを変更しました。
+
+[New]
+・内部構造をオブジェクト指向にシフトしました。
 ```
 
 使い方
@@ -74,6 +78,8 @@ $ [S]
 
 ![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/image/Duke_Blueprint.gif)
 
-※ サンプル動画
+![wgundomロゴ](https://github.com/takkii/Akisui/blob/master/image/wgundom.gif)
+
+※ サンプル動画 (バージョン： 1.0.6のとき記録)
 
 ![akisui sample](https://github.com/takkii/Akisui/blob/master/image/akisui.gif)

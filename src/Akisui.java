@@ -25,7 +25,8 @@ class MyHandler implements Thread.UncaughtExceptionHandler {
 // SubClass
 class Murasame extends Thread{
 
-    public void saya() throws IOException {
+    @SuppressWarnings("InstantiatingAThreadWithDefaultRunMethod")
+    void saya() throws IOException {
         ReentrantReadWriteLock locks;
         locks = new ReentrantReadWriteLock();
 

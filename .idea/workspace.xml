@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e6c51cf-23bd-4331-8c9d-fed9c2c3aa31" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Akisui/.idea/artifacts/Akisui_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Akisui/.idea/libraries/Akisui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Akisui/.idea/libraries/Akisui.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Akisui/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Akisui/.idea/misc.xml" afterDir="false" />

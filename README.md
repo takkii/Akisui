@@ -30,50 +30,8 @@
 「秋水」は冷たく澄んだ秋の水のことで、剣の冴えわたった光をたとえた言葉。
 ```
 
-更新情報
-
-```txt
-・並列処理に対応しました。
-・非同期処理に対応しました。
-・更新処理に対応しました。
-・コンパイラのメッセージを無効化しました。
-・出力時、行番号を表示するようにしました。
-・再コードフォーマットをしました。
-・デバッグを行い、不要なメソッドを削除しました。
-・/read/zinbeiwの読込指定を解除しました。
-・Akisuiフォルダ内ファイルを探索を解除しました。
-・ディレクトリのPATHとファイル名を指定できます。
-・ファイルの読込が失敗したとき、例外を発生させました。
-・ファイルの読込が失敗したときに流れるメッセージを変更しました。
-
-[New]
-・内部構造をオブジェクト指向にシフトしました。
-```
-
-使い方
-
-```text
-[java]
-・JDK8に対応しました。
-
-[エンコーディング]
-・完全なUTF-8 ( SJISなどの漢字は特に文字化けします )
-
-[実行手順]
-
-git clone https://github.com/takkii/Akisui.git
-cd ~/Akisui/out/artifacts/Akisui_jar
-java -jar Akisui.jar
-
-[ フォルダ/ファイル 指定 ]
-(例) D:/Akisui/src/Akisui.java
-
-[ 探したい文字列 or 正規表現 ]
-$ System
-or
-$ [S]
-
 ※ Ruby製zinbeijettのengineより強力で私のこだわりに近いです。
+
 ```
 
 ![Dukeロゴ](https://github.com/takkii/Akisui/blob/master/image/Duke_Blueprint.gif)
